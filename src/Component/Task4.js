@@ -9,11 +9,11 @@ export default function Task4() {
 
     useEffect(() => {
         const RandomBoxes = () => {
-            const count = 10;
+            const count = 20;
             const randomIndexes = new Set();
 
             while (randomIndexes.size < count) {
-                const rand = Math.floor(Math.random() * 10);
+                const rand = Math.floor(Math.random() * totalBoxes);
                 randomIndexes.add(rand);
             }
 
